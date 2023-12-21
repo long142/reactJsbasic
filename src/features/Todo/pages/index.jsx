@@ -18,15 +18,16 @@ function TodoFeature(props) {
     },
     {
       id: 3,
-      title: "Code",
+      title: "Code ",
       status: "new",
     },
   ];
   const [todoList, setTodoList] = useState(initTodoList);
+  const [filteredStatus, setFilteredStatus] = useState("all");
 
   // cập nhật state vị trí
   const handleTodoClick = (todo, idx) => {
-    //clone current array to the new one
+    //clone current array to the new one(with object array)
     const newTodoList = [...todoList];
 
     console.log(todo, idx);
@@ -39,12 +40,33 @@ function TodoFeature(props) {
     //update todo list
     setTodoList(newTodoList);
   };
+  const handleShowAllClick = () => {
+    setFilteredStatus("all");
+  };
+  const handleShowCompletedClick = () => {
+    setFilteredStatus("completed");
+  };
+  const handleShowNewClick = () => {
+    setFilteredStatus("new");
+  };
+
+  const renderedTodoList = todoList.filter(
+    (todo) => filteredStatus === "all" || filteredStatus === todo.status
+  );
+  console.log(renderedTodoList);
 
   return (
-    <div>
-      <h3>Todo list</h3>
-      <TodoList todoList={todoList} onTodoClick={handleTodoClick} />
-    </div>
+    <>
+      <div>
+        <h3>Todo list</h3>
+        <TodoList todoList={renderedTodoList} onTodoClick={handleTodoClick} />
+      </div>
+      <div>
+        <button onClick={handleShowAllClick}>Show All</button>
+        <button onClick={handleShowCompletedClick}>Show Compeleted</button>
+        <button onClick={handleShowNewClick}>Show New</button>
+      </div>
+    </>
   );
 }
 
