@@ -36,10 +36,26 @@
 
 ## 14: routing
 
-## 15:
+## 15: phân biệt link, NavLink
 
-## :
+## 16: phân biệt route và switch
 
-## :
+## 17: route matching
+
+## 18: tạo redirect rule với redirect
+
+## 19: routing hooks 
+
+## 20: nested routing
+
+## 21: sync filters to URL params
+
+## 22: đồng bộ state lên URL 
+
+## 23: config prettier 
+
+## 24: material UI v4 
+
+## 25: ..
 
 **Note: **
