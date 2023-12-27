@@ -8,35 +8,35 @@
 
 ### `npm run eject`
 
-## : what react
+## 1: what react
 
-## : cấu trúc folder reactJS
+## 2: cấu trúc folder reactJS
 
-## : clone github
+## 3: clone github
 
-## : reactDOM.render()
+## 4: reactDOM.render()
 
-## : component, container
+## 5: component, container
 
-## : props, composition
+## 6: props, composition
 
-## : prop type checking
+## 7: prop type checking
 
-## : folder structure
+## 8: folder structure
 
-## : todoList, albumList
+## 9: todoList, albumList
 
-## : state
+## 10: state
 
-## : active todo, filter todo
+## 11: active todo, filter todo
 
-## : life cycles
+## 12: life cycles
 
-## : contructor, componentDidMount, componentWillUnmount, componentDidUpdate
+## 13: contructor, componentDidMount, componentWillUnmount, componentDidUpdate
 
-## : routing
+## 14: routing
 
-## :
+## 15:
 
 ## :
 
