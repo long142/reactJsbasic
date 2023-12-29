@@ -1,20 +1,29 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Color from "./components/color";
-import TodoList from "./features/Todo/components/TodoList";
 import TodoFeature from "./features/Todo/pages";
 import AlbumFeature from "./features/AlBum/pages";
-import ColorBox from "./components/ColorBox";
-import Counter from "./components/Counter";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
     <>
-      {/* <Color /> */}
-      <TodoFeature />
-      {/* <AlbumFeature /> */}
-      {/* <ColorBox />
-      <Counter /> */}
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/todos ">Todos</Link>
+          </li>
+          <li>
+            <Link to="/albums">Albums</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/todos" element={<TodoFeature />} />
+        <Route path="/albums" element={<AlbumFeature />} />
+      </Routes>
     </>
   );
 }
