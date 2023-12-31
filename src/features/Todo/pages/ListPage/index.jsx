@@ -1,32 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import TodoList from "../components/TodoList";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  NavLink,
-} from "react-router-dom";
-import ListPage from "./ListPage";
-import DetailPage from "./DetailPage";
+import TodoList from "../../components/TodoList";
 
-TodoFeature.propTypes = {};
+ListPage.propTypes = {};
 
-// function TodoFeature(props) {
-//   return (
-//     <>
-//       hihihi
-//       <Routes>
-//         {/* <Route path="/albums" element={<h1>hihi</h1>} /> */}
-//         <Route path="/todos/" element={<ListPage />} />
-//         <Route path="/todos/:todoId" element={<DetailPage />} />
-//       </Routes>
-//     </>
-//   );
-// }
-
-function TodoFeature(props) {
+function ListPage(props) {
   const initTodoList = [
     {
       id: 1,
@@ -92,4 +70,4 @@ function TodoFeature(props) {
   );
 }
 
-export default TodoFeature;
+export default ListPage;
